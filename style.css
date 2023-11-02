@@ -5,15 +5,31 @@
 }
 
 body {
+  background: #eaf6f6;
   font-family: "Roboto" sans-serif;
   margin: 0;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
-.picture {
-  border: 1px solid #000;
+.box {
+  background-color: #66bfbf;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  transform: translateX(400%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
 }
