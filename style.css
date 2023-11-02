@@ -27,9 +27,13 @@ body {
   border-radius: 10px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
   transform: translateX(400%);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 400ms ease;
 }
 
 .box:nth-of-type(even) {
   transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
 }
